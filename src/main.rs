@@ -1,6 +1,9 @@
 use std::fs::File;
 use std::io::{self, Read};
 
+mod parser;
+use parser::parser::Parser;
+
 fn main() {
     let default_code = "x = 10
         if x < 0:
